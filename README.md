@@ -1,6 +1,6 @@
-# motion-html
+# Motion::HTML
 
-Motion::HTML lets you parse and traverse HTML in your RubyMotion app. It's like Nokogiri for RubyMotion.
+Parse and traverse HTML in your RubyMotion app. It's like Nokogiri for RubyMotion!
 
 Motion::HTML uses [IGHTMLQuery](https://github.com/siuying/IGHTMLQuery) under the hood.
 
@@ -30,7 +30,7 @@ Then query using css or xpath selectors. It returns an array of nodes:
 nodes = doc.query('.photos li a')
 ```
 
-# Iterate over the results, and use the attributes or content:
+Iterate over the results, and use the attributes or content:
 ```ruby
 nodes.each do |node|
   puts "Link text: " + node.text
