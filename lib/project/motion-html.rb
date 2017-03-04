@@ -19,6 +19,10 @@ module Motion
         node_set.enumerateNodesUsingBlock -> (node, index, stop) { nodes << node }
         nodes
       end
+
+      def at(q)
+        query(q).first
+      end
     end
   end
 end
